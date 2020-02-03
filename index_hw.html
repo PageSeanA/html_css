@@ -1,0 +1,201 @@
+<!-- 
+https://dc-htx-veronica.netlify.com/lessons/week3/wednesday/#medium
+
+1.) Layout practice! Header, footer, sidebar, and main
+A very common layout for a website is to have the following elements:
+A header
+A footer
+Sidebar (on the left or right) that holds navigation links
+A main content area
+Here is an example diagram of the layout
+
+Using your newly found CSS powers, implement this layout using a mix of techniques:
+box model, floating/clearing, and positioning.
+
+2.) Positioning
+Make the 2 column and Holy Grail layouts using absolute positioning. You will use a <div> element 
+    for each box you make, and you will use the left, top, width, and height CSS properties to position 
+    them into place, using percentage units so that the layout will adjust to the size of the browser window. 
+    To allow you to see where the boxes are, you should give each box a different background color.
+
+3.) Floats
+Make the layout above using CSS Floats. Use different color backgrounds so you can see the width and height 
+of each column. Content for each column should have varying heights.
+
+4.) Google Search Page Instructions
+Develop your site to mimic Google's center-aligned site.
+https://www.google.com/
+-->
+<!-- 
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+
+    <style>
+        #header{
+
+            width: 100%;
+            /* height: 200px; */
+            background-color: orange;
+            text-align: center;
+            line-height: 200px;
+            margin-bottom: 30px;
+        }
+
+        #main{
+            /* height: 400px; */
+            line-height: 400px;
+            background-color: darkorange;
+            margin-bottom: 10px;
+        }
+
+        #sideBar{
+            
+            background-color: red;
+            width: 29%;
+            height: 100%;
+            display: inline-block;
+            text-align: center;
+            
+        }
+
+        #mainContent{
+            width: 70%;
+            height: 100%;
+            display: inline-block;
+            text-align: center;
+        }
+
+        #footer{
+            /* height: 200px; */
+            line-height: 200px;
+            width: 100%;
+            background-color: yellow;
+            text-align: center;
+        }
+
+        body{
+            margin: 0;
+        }
+    </style>
+</head>
+<body>
+
+    <div id="header">
+        Header
+    </div>
+
+    <div id="main">
+
+        <div id="sideBar">
+            Sidebar
+        </div>
+        <div id="mainContent">
+            Main Content
+        </div>
+    </div> 
+    main div -->
+
+    <div id="footer">
+        Footer
+
+    </div>
+    
+</body>
+</html>
+<!-- 
+2.) -->
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+
+    <style>
+        #header{
+
+            width: 100%;
+            /* height: 200px; */
+            background-color: orange;
+            text-align: center;
+            line-height: 200px;
+            margin-bottom: 30px;
+        }
+
+        #main{
+            /* height: 400px; */
+            line-height: 400px;
+            background-color: darkorange;
+            margin-bottom: 10px;
+        }
+
+        #sideBar{
+            
+            background-color: red;
+            width: 29%;
+            height: 100%;
+            display: inline-block;
+            text-align: center;
+            
+        }
+
+        #mainContent{
+            width: 70%;
+            height: 100%;
+            display: inline-block;
+            text-align: center;
+        }
+
+        #footer{
+            /* height: 200px; */
+            line-height: 200px;
+            width: 100%;
+            background-color: yellow;
+            text-align: center;
+        }
+
+        body{
+            margin: 0;
+        }
+    </style>
+</head>
+<body>
+
+    <div id="header">
+        Header
+    </div>
+
+    <div id="main">
+
+        <div id="sideBar">
+            Sidebar
+        </div>
+        <div id="mainContent">
+            Main Content
+        </div>
+    </div> 
+    <!-- main div -->
+
+    <div id="footer">
+        Footer
+
+    </div>
+    
+</body>
+</html>
+
+<div id="footer">
+    Footer
+
+</div>
+
+</body>
+</html>

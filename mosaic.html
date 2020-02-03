@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Mosaic</title>
+
+    <style> 
+    /* Set up style rules 1st. These style rules dictate what happens in the classes. */
+        .container{
+            width: 100vh;
+            height: 90vh;
+            display: flex;
+            flex-direction: row;
+            align-items: stretch;
+            margin-left: auto;
+            margin-right: auto;
+            margin-top: 25px;
+
+        }
+
+        .flexContainerRow{
+            display: flex;
+            flex-direction: row;
+            height: 100%;
+            /* line height of 100% of its parent */
+            align-items: stretch;
+        }
+
+        .flexContainerColumn{
+            display: flex;
+            flex-direction: column;
+            height: 100%;
+            align-items: stretch;
+        }
+
+        .flex1{
+            flex: 1;
+        }
+
+        .flex2{
+            flex: 2;
+        }
+
+        .flex3{
+            flex: 3;
+        }
+
+        .flex4{
+            flex: 4;
+        }
+
+        .flex5{
+            flex: 5;
+        }
+
+        .red{
+            background-color: red;
+
+        }
+
+        .yellow{ 
+            background-color: yellow;
+
+        }
+
+        .green{
+            background-color: green;
+
+        }
+
+        .red{
+            background-color: red;
+        }
+
+        .blue{
+            background-color: blue;
+        }
+
+        .white{
+            background-color: white;
+        }
+
+        .black{
+            background-color: black;
+        }
+
+        .pink{
+            background-color: pink;
+        }
+
+        .purple{
+            background-color: purple;
+        }
+            
+        .border{ 
+            border: solid black 1px; 
+        }
+    
+    
+    </style>
+</head>
+<body>
+    <!-- The red container box is the parent box.  -->
+    <div class="container red">
+        <!-- Everything contained below "container red" are children to it. -->
+        <div class="yellow flex1">
+            first container - child of container
+        </div>
+
+        <div class="green flex1 flexContainerRow">
+
+            <div class="purple flex1 flexContainerColumn">
+                <div class="yellow border flex1"></div>
+                <div class="yellow border flex3"></div>
+
+                <div class="white border flex3 flexContainerRow">
+
+                    <div class="white border flex1"></div>
+                    <div class="white border flex1"></div>
+                </div>
+
+                <div class="white border flex1"></div>
+                <div class="blue border flex3"></div>
+                <div class="red border flex3"></div>
+            </div>
+
+
+            <div class="pink flex1 flexContainerColumn">
+                <div class="blue border flex3"></div>
+                <div class="red border flex3"></div>
+                <div class="white border flex1"></div>
+                <div class="white border flex3 flexContainerRow">
+                    <div class="white border flex1"></div>
+                    <div class="white border flex1"></div>
+
+                </div>
+                <div class="yellow border flex3"></div>
+                <div class="white border flex1 flexContainerRow">
+                    <div class="white border flex1"></div>
+                    <div class="black border flex1"></div>
+
+                </div>
+
+
+            </div>
+
+        </div>
+
+        <div class="red flex1">
+            third container - child of container
+        </div>
+
+
+
+    </div>
+
+
+
+</body>
+</html>
